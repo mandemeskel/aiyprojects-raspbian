@@ -52,7 +52,7 @@ class Recorder(threading.Thread):
         - sample_rate_hz: sample rate in hertz
         """
 
-        super().__init__(daemon=True)
+        super(Recorder, self).__init__()
         self._record_event = threading.Event()
         self._processors = []
 
